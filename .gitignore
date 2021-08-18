@@ -1,0 +1,9 @@
+ENV/
+movieNames.txt
+csvProcess.py
+__pycache__/
+.DS_Store
+data/.DS_Store
+templates/index.html
+data/MovieGenre.csv
+data/movies_metadata.csv

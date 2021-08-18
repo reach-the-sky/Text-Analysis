@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            width:100vw;
+            height: 100vh;
+            background-color: #EF5354;
+        }
+
+        .Heading{ padding-top: 1%;
+            position: absolute;
+            padding-top: 3%;
+            width: 100%;
+            color: rgb(255, 209, 209);
+            text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: bold;
+
+        }
+
+        .Container{
+            width:100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .SubContainer{
+            background-color: #faadad;
+            opacity: 0.8;
+            border-radius: 30px;
+            width: 500px;
+            height: 350px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+
+        #frame1{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button{
+            text-align: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: large;
+            padding: 1px 25px;
+            background-color: #C36C6C;
+            border-radius: 10px;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+            border-color: #C36C6C;
+            cursor: pointer;
+            /* height: 50px; */
+            width: 200px;
+        }
+
+        #button:active{
+            text-decoration-color: black;
+            color: black;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+        }
+        .btnMovieRecommendation:hover {
+            background-color: #f5bbca;
+            border-color: #f5bbca;
+            -webkit-transition: background-color 300ms linear;
+            -ms-transition: background-color 300ms linear;
+            transition: background-color 300ms linear;
+        }
+
+        .btnTextSummarization:hover {
+            background-color: #e5bc00;
+            border-color: #e5bc00;
+            -webkit-transition: background-color 300ms linear;
+            -ms-transition: background-color 300ms linear;
+            transition: background-color 300ms linear;
+        }
+
+        .btnTexttoGraph:hover {
+            background-color: #9bd2e2;
+            border-color: #9bd2e2;
+            -webkit-transition: background-color 300ms linear;
+            -ms-transition: background-color 300ms linear;
+            transition: background-color 300ms linear;
+        }
+
+        @media only screen and (max-width :700px){
+        
+            .SubContainer{
+                background-color: #a0a0a0;
+                width: 300px;
+                height: 320px;
+                box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+    </style>
+    <script>
+        function movieRecommendation(){
+            window.location.href = "movieRecommendation"
+        }
+        function textSummarization(){
+            window.location.href = "textSummarization"
+        }
+        function textToGraph(){
+            window.location.href = "textToGraph"
+        }
+    </script>
+</head>
+<body>
+    <h1 class="Heading">Text Analysis</h1>
+    <div class="Container">
+        <div class="SubContainer">
+            <div id="frame1">
+                <button class="button btnMovieRecommendation" onclick="movieRecommendation()">
+                    <p class="Text">Movie Recommendation</p>
+                </button>
+                <button class="button btnTexttoGraph" onclick="textToGraph()">
+                    <p class="Text">Text to Graph Generation</p>
+                </button>
+                <button class="button btnTextSummarization" onclick="textSummarization()">
+                    <p class="Text">Text summarization</p>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
