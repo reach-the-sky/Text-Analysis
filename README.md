@@ -26,7 +26,8 @@ $ pip install requirements.txt
 ```
 
 #### To clone this repository
-
-> `git clone https://github.com/reach-the-sky/Text-Analysis.git`
+```
+$ git clone https://github.com/reach-the-sky/Text-Analysis.git
+```
 
 <b>If you liked my project and appreciate the content I opensource, consider following me on [Github 🌥](https://github.com/reach-the-sky).</b>
